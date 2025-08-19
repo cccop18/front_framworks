@@ -1,0 +1,14 @@
+<form (submit)="salvar()" #form="ngForm">
+
+  <div class="grid">
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome" [(ngModel)]="registro.nome" required>
+
+    <label for="endereco">Endereço</label>
+    <input type="text" name="endereco" id="endereco" [(ngModel)]="registro.endereco">
+  </div>
+
+  <input type="button" value="Cancelar" routerLink="/config/unidade-list">
+  <input type="submit" value="Salvar">
+
+</form>
